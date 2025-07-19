@@ -1,7 +1,7 @@
 const scrollBtn = document.getElementById('scrollToTop');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) { // po przewinięciu 300px pokazujemy przycisk
+  if (window.scrollY > 300) {
     scrollBtn.classList.add('show');
   } else {
     scrollBtn.classList.remove('show');
@@ -16,7 +16,8 @@ scrollBtn.addEventListener('click', () => {
 });
 
 function toggleNav() {
-    const navList = document.querySelector('.main-nav');
-    navList.classList.toggle('open');
-  }
-
+  const navList = document.querySelector('.main-nav');
+  const burger = document.querySelector('.burger');
+  navList.classList.toggle('open');
+  burger.classList.toggle('open'); // <-- animacja burgera
+}

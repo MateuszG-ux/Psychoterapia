@@ -14,3 +14,9 @@ scrollBtn.addEventListener('click', () => {
     behavior: 'smooth',
   });
 });
+
+function toggleNav() {
+    const navList = document.querySelector('.nav-menu ul');
+    navList.classList.toggle('active');
+  }
+

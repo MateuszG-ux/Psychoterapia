@@ -16,7 +16,7 @@ scrollBtn.addEventListener('click', () => {
 });
 
 function toggleNav() {
-    const navList = document.querySelector('.nav-menu ul');
+    const navList = document.querySelector('.main-nav');
     navList.classList.toggle('active');
   }
 

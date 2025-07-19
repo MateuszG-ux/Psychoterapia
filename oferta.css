@@ -1,0 +1,86 @@
+/* Kontener główny oferty */
+.oferta-content {
+  max-width: 900px;
+  margin: 40px auto 80px;
+  padding: 30px 35px;
+  background: #f9f4f7; /* jasny pastelowy róż, ale delikatniejszy niż psychoterapia */
+  border-left: 6px solid #db9fc9; /* pastelowy róż */
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(219, 159, 201, 0.3);
+  color: #4a4a4a;
+  font-size: 1.17rem;
+  line-height: 1.7;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.oferta-content h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #b4637a; /* trochę ciemniejszy róż */
+  margin-bottom: 28px;
+  letter-spacing: 0.04em;
+}
+
+.oferta-content h2 {
+  font-size: 2rem;
+  color: #b4637a;
+  font-weight: 700;
+  margin-top: 48px;
+  margin-bottom: 22px;
+  letter-spacing: 0.03em;
+}
+
+.oferta-content p {
+  margin-bottom: 24px;
+}
+
+.oferta-content ul {
+  padding-left: 24px;
+  margin-bottom: 30px;
+  list-style-type: disc;
+}
+
+.oferta-content li {
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+/* Akcentowanie ważnych elementów */
+.oferta-content strong {
+  color: #b4637a;
+  font-weight: 700;
+}
+
+/* Responsywność */
+@media (max-width: 900px) {
+  .oferta-content {
+    padding: 25px 20px;
+    font-size: 1.1rem;
+    margin: 30px 20px 60px;
+  }
+
+  .oferta-content h1 {
+    font-size: 2.1rem;
+  }
+
+  .oferta-content h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .oferta-content {
+    font-size: 1rem;
+    padding: 20px 15px;
+  }
+
+  .oferta-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .oferta-content h2 {
+    font-size: 1.4rem;
+  }
+}

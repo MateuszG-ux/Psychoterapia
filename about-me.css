@@ -1,0 +1,70 @@
+/* Kontener tekstowy dedykowany dla about-me */
+.about-me-text {
+  max-width: 900px;
+  margin: 40px auto 80px;
+  padding: 30px 35px;
+  background: #f8e9f0; /* bardzo jasny pastelowy róż */
+  border-left: 6px solid #db9fc9; /* pastelowy róż */
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(219, 159, 201, 0.25);
+  color: #4a4a4a;
+  font-size: 1.2rem;
+  line-height: 1.75;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.about-me-text h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #2f5d34; /* ciemna zieleń */
+  margin-bottom: 24px;
+  letter-spacing: 0.04em;
+}
+
+.about-me-text h2 {
+  color: black;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
+}
+
+.about-me-text p {
+  margin-bottom: 20px;
+}
+
+.about-me-text ul {
+  padding-left: 22px;
+  margin-bottom: 30px;
+  list-style-type: disc;
+}
+
+.about-me-text li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* Responsywność */
+@media (max-width: 900px) {
+  .about-me-text {
+    padding: 25px 20px;
+    font-size: 1.1rem;
+    margin: 30px 20px 60px;
+  }
+  
+  .about-me-text h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me-text {
+    font-size: 1rem;
+    padding: 20px 15px;
+  }
+
+  .about-me-text h1 {
+    font-size: 1.6rem;
+  }
+}

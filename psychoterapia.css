@@ -1,0 +1,86 @@
+/* Kontener główny podstrony psychoterapia */
+.psychoterapia-content {
+  max-width: 900px;
+  margin: 40px auto 80px;
+  padding: 30px 35px;
+  background: #f0f4f0; /* bardzo jasna mięta dla świeżości i spokoju */
+  border-left: 6px solid #72a98f; /* stonowana zieleń */
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(114, 169, 143, 0.25);
+  color: #3a3a3a;
+  font-size: 1.17rem;
+  line-height: 1.8;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.psychoterapia-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #4f7a65; /* ciemniejsza zieleń */
+  margin-bottom: 28px;
+  letter-spacing: 0.04em;
+}
+
+.psychoterapia-content h2 {
+  font-size: 2rem;
+  color: #4f7a65;
+  font-weight: 700;
+  margin-top: 48px;
+  margin-bottom: 22px;
+  letter-spacing: 0.03em;
+}
+
+.psychoterapia-content p {
+  margin-bottom: 24px;
+}
+
+.psychoterapia-content ul {
+  padding-left: 24px;
+  margin-bottom: 30px;
+  list-style-type: disc;
+}
+
+.psychoterapia-content li {
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #3a3a3a;
+}
+
+/* Akcentowanie ważnych tekstów */
+.psychoterapia-content strong {
+  color: #4f7a65;
+  font-weight: 700;
+}
+
+/* Responsywność */
+@media (max-width: 900px) {
+  .psychoterapia-content {
+    padding: 25px 20px;
+    font-size: 1.1rem;
+    margin: 30px 20px 60px;
+  }
+
+  .psychoterapia-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .psychoterapia-content h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .psychoterapia-content {
+    font-size: 1rem;
+    padding: 20px 15px;
+  }
+
+  .psychoterapia-content h1 {
+    font-size: 1.7rem;
+  }
+
+  .psychoterapia-content h2 {
+    font-size: 1.4rem;
+  }
+}

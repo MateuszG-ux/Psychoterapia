@@ -1,0 +1,143 @@
+/* Reset i podstawy */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #444;
+  line-height: 1.6;
+  padding-top: 60px; /* miejsce na navbar */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar fixed u góry, menu wyrównane do prawej */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #c3e6cb; /* pastelowa zieleń */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 30px;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black; /* pastelowy róż */
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  letter-spacing: 0.03em;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #db9fc9;
+  color: #fff;
+  outline: none;
+}
+
+/* Stopka na dole, ładnie wyśrodkowana, oddzielona */
+footer {
+  background-color: #c3e6cb;
+  color: #444;
+  text-align: center;
+  padding: 15px 20px;
+  margin-top: auto; /* przy flex column body to wypycha stopkę do dołu */
+  font-size: 0.9rem;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+}
+
+/* Linki w całym serwisie */
+a {
+  color: #db9fc9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #a3557b;
+  outline: none;
+}
+
+/* Ogólny kontener dla większości podstron - max szerokość i padding */
+.container {
+  max-width: 1100px;
+  margin: 40px auto 80px;
+  padding: 0 25px;
+}
+
+#scrollToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #f8e9f0;       /* jasna pastelowa zieleń */
+  border:none;
+  color: #6a5aa3;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(195, 230, 203, 0.6); /* delikatny cień w tonacji zieleni */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  pointer-events: none;
+}
+
+#scrollToTop.show {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+#scrollToTop:hover,
+#scrollToTop:focus {
+  background-color: #f8e9f0; 
+  outline: none;
+}
+
+/* Responsywność globalna */
+@media (max-width: 900px) {
+  nav ul {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    gap: 12px;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}

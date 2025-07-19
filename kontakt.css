@@ -1,0 +1,136 @@
+.kontakt {
+  max-width: 900px;
+  margin: 50px auto 90px;
+  padding: 35px 40px;
+  background: #f9f7fd;
+  border-radius: 16px;
+  box-shadow: 0 10px 28px rgba(133, 104, 179, 0.2);
+  color: #3e3e59;
+  font-size: 1.18rem;
+  line-height: 1.65;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+   border-left: 5px solid #8568b3;
+  padding-left: 45px; /* 10px więcej, żeby było miejsce na border */
+
+  display: flex;
+  flex-direction: column; /* zmieniamy na kolumnę, bo h1 będzie osobno */
+  gap: 30px;
+}
+
+/* Wyśrodkowanie h1 i pełna szerokość */
+.kontakt h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #5d4a8a;
+  margin: 0 auto 32px auto; /* góra 0, dół 32px, centrowanie */
+  letter-spacing: 0.04em;
+  text-align: center;
+  width: 100%;
+}
+
+/* Nowy flex kontener dla tekstu i mapki */
+.kontakt-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+}
+
+/* Tekst - po lewej */
+.kontakt-content > .tekst {
+  flex: 1.2; /* trochę więcej miejsca niż mapka */
+}
+
+/* Mapka - po prawej */
+.kontakt-content > .mapka {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(133, 104, 179, 0.25);
+  min-width: 300px;
+  min-height: 350px;
+}
+
+.kontakt-content .mapka iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  border: 0;
+  border-radius: 12px;
+}
+
+/* Styl dla tekstu w paragrafach */
+.kontakt-content .tekst p {
+  margin-bottom: 18px;
+  font-weight: 500;
+  color: #3e3e59;
+}
+
+.kontakt-content .tekst p strong {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #6a5aa3;
+}
+
+.kontakt-content .tekst a {
+  color: #7d65b8;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.kontakt-content .tekst a:hover,
+.kontakt-content .tekst a:focus {
+  color: #a691d3;
+  text-decoration: underline;
+  outline: none;
+}
+
+.kontakt-info-sms {
+  margin-top: 30px;
+  padding: 20px 25px;
+  background-color: #f1ecfa;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #4a3e6a;
+  box-shadow: 0 6px 14px rgba(133, 104, 179, 0.15);
+}
+
+.kontakt-info-sms p {
+  margin: 0;
+}
+
+/* Responsywność */
+@media (max-width: 900px) {
+  .kontakt-content {
+    flex-direction: column;
+  }
+
+  .kontakt-content > .tekst,
+  .kontakt-content > .mapka {
+    flex: unset;
+    min-width: 100%;
+  }
+
+  .kontakt-content .mapka iframe {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kontakt {
+    padding: 22px 15px;
+    font-size: 1rem;
+  }
+
+  .kontakt h1 {
+    font-size: 1.8rem;
+  }
+
+  .kontakt-content .mapka iframe {
+    min-height: 260px;
+  }
+}

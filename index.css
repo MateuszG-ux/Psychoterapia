@@ -139,15 +139,15 @@ main::after {
 
 /* Responsywność */
 @media (max-width: 900px) {
-  main{
+  main {
     background: white none !important;
   }
 
   main::before,
-main::after {
-  border-left: 0px solid white;
-  border-bottom: 0px solid transparent;
-}
+  main::after {
+    content: none !important;
+    display: none !important;
+  }
 
   .page-container {
     flex-direction: column;
@@ -165,15 +165,15 @@ main::after {
 }
 
 @media (max-width: 600px) {
-  main{
+  main {
     background: white none !important;
   }
 
   main::before,
-main::after {
-  border-left: 0px solid white;
-  border-bottom: 0px solid transparent;
-}
+  main::after {
+    content: none !important;
+    display: none !important;
+  }
 
   .index-quote {
     font-size: 1rem;
@@ -183,14 +183,15 @@ main::after {
 }
 
 @media (max-width: 480px) {
-  main{
+  main {
     background: white none !important;
   }
 
   main::before,
-main::after {
-  display: none !important;
-}
+  main::after {
+    content: none !important;
+    display: none !important;
+  }
 
   .index-text {
     font-size: 1.1rem;
@@ -202,15 +203,15 @@ main::after {
 }
 
 @media (max-width: 360px) {
-  main{
+  main {
     background: white none !important;
   }
 
   main::before,
-main::after {
-  border-left: 0px solid white;
-  border-bottom: 0px solid transparent;
-}
+  main::after {
+    content: none !important;
+    display: none !important;
+  }
 
   .index-quote {
     font-size: 0.9rem;
@@ -224,3 +225,4 @@ main::after {
   }
 
 }
+

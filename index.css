@@ -140,7 +140,7 @@ main::after {
 /* Responsywność */
 @media (max-width: 900px) {
   main{
-    background-color:white;
+    background: white none !important;
   }
 
   .page-container {
@@ -160,7 +160,7 @@ main::after {
 
 @media (max-width: 600px) {
   main{
-    background-color:white;
+    background: white none !important;
   }
 
   .index-quote {
@@ -172,7 +172,7 @@ main::after {
 
 @media (max-width: 480px) {
   main{
-    background-color:white;
+    background: white none !important;
   }
 
   .index-text {
@@ -186,9 +186,9 @@ main::after {
 
 @media (max-width: 360px) {
   main{
-    background-color:white;
+    background: white none !important;
   }
-  
+
   .index-quote {
     font-size: 0.9rem;
     padding-left: 10px;

@@ -1,13 +1,19 @@
+body{
+background-image: url('3.jpeg');
+background-size: cover;
+background-position: center;
+}
+
 /* Kontener główny podstrony psychoterapia */
 .psychoterapia-content {
   max-width: 900px;
   margin: 40px auto 80px;
   padding: 30px 35px;
-  background: #f0f4f0; /* bardzo jasna mięta dla świeżości i spokoju */
+  background: #f0f4f0bf; /* bardzo jasna mięta dla świeżości i spokoju */
   border-left: 6px solid #72a98f; /* stonowana zieleń */
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(114, 169, 143, 0.25);
-  color: #3a3a3a;
+  color: black;
   font-size: 1.17rem;
   line-height: 1.8;
   font-weight: 400;
@@ -44,7 +50,7 @@
 .psychoterapia-content li {
   margin-bottom: 12px;
   font-weight: 500;
-  color: #3a3a3a;
+  color: black;
 }
 
 /* Akcentowanie ważnych tekstów */

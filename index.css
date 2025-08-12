@@ -8,12 +8,50 @@ main {
   margin-top: 0;
 }
 
+/* Tło całej strony z przyciemnieniem */
+main {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+              url("tlo.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* Trójkąt w lewym górnym rogu */
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 200vh solid white;
+  border-bottom: 85px solid transparent;
+  z-index: 1;
+}
+
+/* Trójkąt w prawym dolnym rogu */
+main::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-right: 200vh solid white;
+  border-top: 85px solid transparent;
+  z-index: 1;
+}
+
 /* Kontener główny na stronie startowej - flex z tekstem i obrazem */
 .page-container {
   display: flex;
   max-width: 1100px;
+  background: #fdf6fb80;
+  border-radius:25px;
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 25px;
   gap: 40px;
   align-items: center;
   flex-wrap: wrap;
@@ -23,13 +61,14 @@ main {
 .index-text {
   flex: 1 1 45%;
   font-size: 1.3rem;
-  color: #3a3a3a;
+  color: black;
   line-height: 1.7;
 }
 
 .index-text h1 {
   font-size: 2.8rem;
   color: #2f5d34; /* ciemna zieleń */
+  text-shadow: 1px 1px 1px black;
   margin-bottom: 20px;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -66,14 +105,14 @@ main {
 .index-quote {
   margin-top: 20px;
   font-style: italic;
-  color: #6a5aa3; /* pasujący fiolet */
+  color: black; /* pasujący fiolet */
   font-size: 1.1rem;
   text-align: center;
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.4;
-  border-left: 4px solid #6a5aa3;
+  border-left: 4px solid #9b2143;
   padding-left: 16px;
   font-weight: 500;
   user-select: text;
@@ -82,19 +121,19 @@ main {
 
 .index-quote::before {
   content: open-quote;
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 0;
   vertical-align: -0.4em;
-  color: #a691d3;
+  color: #9b2143;
   margin-right: 6px;
 }
 
 .index-quote::after {
   content: close-quote;
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 0;
   vertical-align: -0.4em;
-  color: #a691d3;
+  color: #9b2143;
   margin-left: 6px;
 }
 

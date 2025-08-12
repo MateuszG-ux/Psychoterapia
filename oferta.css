@@ -1,13 +1,19 @@
+body{
+background-image: url('1.jpeg');
+background-size: cover;
+background-position: center;
+}
+
 /* Kontener główny oferty */
 .oferta-content {
   max-width: 900px;
   margin: 40px auto 80px;
   padding: 30px 35px;
-  background: #f9f4f7; /* jasny pastelowy róż, ale delikatniejszy niż psychoterapia */
+  background: #f9f4f7bf; /* jasny pastelowy róż, ale delikatniejszy niż psychoterapia */
   border-left: 6px solid #db9fc9; /* pastelowy róż */
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(219, 159, 201, 0.3);
-  color: #4a4a4a;
+  color: black;
   font-size: 1.17rem;
   line-height: 1.7;
   font-weight: 400;
@@ -44,7 +50,7 @@
 .oferta-content li {
   margin-bottom: 12px;
   font-weight: 500;
-  color: #4a4a4a;
+  color: black;
 }
 
 /* Akcentowanie ważnych elementów */

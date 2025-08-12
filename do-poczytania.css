@@ -1,13 +1,19 @@
+body{
+background-image: url('2.jpeg');
+background-size: cover;
+background-position: center;
+}
+
 /* Kontener główny sekcji "Do Poczytania" */
 .do-poczytania {
   max-width: 900px;
   margin: 40px auto 80px;
   padding: 30px 35px;
-  background: #fdf6fb; /* bardzo jasny różowo-lawendowy pastel */
+  background: #fdf6fbbf; /* bardzo jasny różowo-lawendowy pastel */
   border-left: 6px solid #cbb1d4; /* pastelowy lawendowy fiolet */
   border-radius: 16px;
   box-shadow: 0 8px 22px rgba(203, 177, 212, 0.3);
-  color: #4a4a4a;
+  color: black;
   font-size: 1.18rem;
   line-height: 1.75;
   font-weight: 400;
@@ -25,7 +31,7 @@
 .do-poczytania p {
   margin-bottom: 24px;
   font-weight: 500;
-  color: #4a4a4a;
+  color: black;
 }
 
 .do-poczytania ul {
@@ -37,7 +43,7 @@
 .do-poczytania li {
   margin-bottom: 14px;
   font-weight: 500;
-  color: #4a4a4a;
+  color: black;
 }
 
 .do-poczytania li a {

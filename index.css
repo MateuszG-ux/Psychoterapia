@@ -143,6 +143,11 @@ main::after {
     background: white none !important;
   }
 
+  main::before,
+main::after {
+  display: none !important;
+}
+
   .page-container {
     flex-direction: column;
   }
@@ -163,6 +168,11 @@ main::after {
     background: white none !important;
   }
 
+  main::before,
+main::after {
+  display: none !important;
+}
+
   .index-quote {
     font-size: 1rem;
     padding-left: 12px;
@@ -174,6 +184,11 @@ main::after {
   main{
     background: white none !important;
   }
+
+  main::before,
+main::after {
+  display: none !important;
+}
 
   .index-text {
     font-size: 1.1rem;
@@ -188,6 +203,11 @@ main::after {
   main{
     background: white none !important;
   }
+
+  main::before,
+main::after {
+  display: none !important;
+}
 
   .index-quote {
     font-size: 0.9rem;
